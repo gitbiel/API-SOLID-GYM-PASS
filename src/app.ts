@@ -1,5 +1,5 @@
 import fastify from 'fastify';
-import { appRoutes } from './htpp/routes';
+import { appRoutes } from './http/routes';
 
 export const app = fastify();
 
