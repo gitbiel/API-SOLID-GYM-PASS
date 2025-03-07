@@ -12,6 +12,7 @@ describe('Register Use Case', () => {
     usersRepository = new InMemoryUsersRepository();
     sut = new RegisterUseCase(usersRepository);
   });
+  
   it('should to register', async () => {
     const { user } = await sut.execute({
       name: 'John Doe',
