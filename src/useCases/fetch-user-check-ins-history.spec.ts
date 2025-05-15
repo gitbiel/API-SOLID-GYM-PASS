@@ -1,4 +1,4 @@
-import { InMemoryCheckInsRepository } from '@/repositories /inMemory/in-memory-check-ins-repository';
+import { InMemoryCheckInsRepository } from '@/repositories/inMemory/in-memory-check-ins-repository';
 import { beforeEach, describe, expect, it } from 'vitest';
 import { FetchUserCheckInsHistoryUseCase } from './fetch-user-check-ins-history';
 

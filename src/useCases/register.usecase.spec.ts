@@ -1,4 +1,4 @@
-import { InMemoryUsersRepository } from '@/repositories /inMemory/in-memory-users-repository';
+import { InMemoryUsersRepository } from '@/repositories/inMemory/in-memory-users-repository';
 import { compare } from 'bcryptjs';
 import { expect, describe, it, beforeEach } from 'vitest';
 import { RegisterUseCase } from './register.usecase';
@@ -12,7 +12,7 @@ describe('Register Use Case', () => {
     usersRepository = new InMemoryUsersRepository();
     sut = new RegisterUseCase(usersRepository);
   });
-  
+
   it('should to register', async () => {
     const { user } = await sut.execute({
       name: 'John Doe',
